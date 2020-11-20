@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+       
+        table,th,td{
+           border: 1px solid black;
+           border-collapse: collapse;
+       }
+       th{
+ padding: 5px;
+ 
+       } 
+       tr:nth-child(odd) {background-color: #f2f2f2;}
+       
+       .topnav {
+       overflow: hidden;
+       background-color: #333;
+       }
+       
+       .topnav a {
+       float: left;
+       color: #f2f2f2;
+       text-align: center;
+       padding: 14px 16px;
+       text-decoration: none;
+       font-size: 17px;
+       }
+       
+       .topnav a:hover {
+       background-color:white;
+       color:black;
+       }
+       
+       .topnav a.active {
+       background-color: darkblue;
+       color: white;
+       }
+</style>        
+</head>
+<body>
+    <h1 align="center">SRM HOSTEL MESS MANAGEMENT</h1>
+    <div class="topnav">
+        <a href="Home.html">HOME</a>
+        
+        <a href="payment.html">PAYMENT</a>
+        
+        <a href="menu.html">MENU</a> 
+        
+        <a href="rules.html">RULES</a>
+        
+        <a href="registration.html">REGISTRATION</a>
+        
+        <a href="login.html">LOGIN</a>
+        
+        <a href="feedback.html">FEEDBACK</a>
+        
+        </div>
+        <BR><BR>
+        <table align="center" width="100%">
+            <tr width="100%">
+                <th align="center">STUDENT PAYMENT DETAILS</th>
+            </tr>
+        </table>
+        <br>
+        <table align="center" width="100%">
+       <tr>
+           <th>Fee type</th>
+           <th>Raised Amount</th>
+           <th>Penality Start Date</th>
+           <th>Penality Amount</th>
+           <th>Amount Paid</th>
+           <th>Concession Amount</th>
+           <th>Amount to Pay</th>
+           <th>Minimum Amount allowed</th>
+           <th>Enter Amount to Pay</th>
+       </tr>
+       <tr>
+           <td>Hostel Mess Fee</td>
+           <td>75000.0</td>
+           <td>-</td>
+           <td>-</td>
+           <td>0</td>
+            <td>0</td>
+            <td>5000.0</td>
+            <td>75000.0</td>
+            <td><form>
+                <label for="amnt"></label>
+            <input type="number" placeholder="Amount" id="amnt" name="amnt" required>
+            </form></td>
+ 
+       </tr>
+        </table>
+        <br><br>
+    <form action="payment1.html" align="center">
+        <lable for="tandc"></lable>
+        <input type="checkbox" id="tc" name="tc" required>
+        I agree to <a href="terms and cond.html">terms & conditions</a>
+        <br>
+        <br><br><br>
+      <button width="50%">Pay</button>
+    </form>
+</body>
+</html>
