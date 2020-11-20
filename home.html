@@ -1,0 +1,257 @@
+<html>
+<head>
+<title>SRM HOSTELS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    img {vertical-align: middle;}
+html {
+background-color:whitesmoke;
+background-size: cover;
+}
+body {
+  width: 1100 px;
+  height: 1350px;
+}
+button
+{
+width: 300px;
+height: 100px;
+margin-left: 20px;
+text-align: center;
+}
+div.scrolling{
+border-color: skyblue;
+border-style: solid;
+border-width: 2px;
+background-color: lemonchiffon;
+color: red;
+}
+ 
+.slideshow-container {
+  width:100%;
+  position:relative;
+  margin:auto;
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+ 
+.active {
+  background-color: #717171;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+ 
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+ 
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+ 
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+ 
+div.about{
+width: 1225px;
+height: 300px;
+border: 2px;
+ 
+margin-left: 20px;
+padding-top: 10px;
+padding-right: 30px;
+padding-bottom: 20px;
+padding-left: 30px;
+}
+ 
+.center {
+display: block;
+margin-top: 10px;
+margin-left: auto;
+margin-right: auto;
+width: 100%;
+height:50%
+}
+.topnav {
+overflow: hidden;
+background-color: #333;
+}
+ 
+.topnav a {
+float: left;
+color: #f2f2f2;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+}
+ 
+.topnav a:hover {
+background-color:whitesmoke;
+color:black;
+}
+ 
+.fa {
+padding:1px;
+font-size: 30px;
+width: 40px;
+text-align: center;
+text-decoration: none;
+ 
+}
+ 
+.fa:hover {
+opacity: 0.7;
+}
+ 
+.fa-facebook {
+background: #3B5998;
+color: white;
+}
+ 
+.fa-twitter {
+background: #55ACEE;
+color: white;
+}
+ 
+.fa-google {
+background: #dd4b39;
+color: white;
+}
+.fa-instagram {
+background: #3f729b;
+color: pink;
+}
+.footer {
+ 
+position:fixed;
+left: 0;
+bottom:0;
+width: 100%;
+background-color:lightsteelblue;
+color: white;
+text-align: center;
+}
+</style>
+ 
+<body>
+ 
+<h1 align="center">SRM HOSTEL MESS MANAGEMENT</h1>
+<div class="topnav">
+<a href="Home.html">HOME</a>
+ 
+<a href="payment.html">PAYMENT</a>
+ 
+<a href="menu.html">MENU</a> 
+ 
+<a href="rules.html">RULES</a>
+ 
+<a href="registration.html">REGISTRATION</a>
+ 
+<a href="login.html">LOGIN</a>
+ 
+<a href="feedback.html">FEEDBACK</a>
+ 
+</div>
+<br>
+<div class="slideshow-container" align="center">
+  <div class="mySlides fade">
+      <img src="https://cdn.aarp.net/content/dam/aarp/health/conditions_treatments/2019/05/1140-healthy-meal.jpg" height="400" width="900">
+    </div>
+    <div class="mySlides fade">
+      <img src="https://files.atkins.com/EatRight_Image_desktop@2x.png?auto=compress"  width="900" height="400">
+  </div>
+    <div class="mySlides fade">
+    
+      <img src="https://www.purdue.edu/uns/images/2019/pt-plant-based-foods.jpg" height="400" width="900">
+    </div>
+  
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+    <script>
+        var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        </script>
+        
+    </div>
+<table>
+<tr><td>
+<div class="about">
+<div style="background-color:black ;color: white;font-size: 150%">ABOUT US</div>
+<h4 style="color:whitess">
+The hostel premises comprises of a separate dining facility for hostel residents. The hostel mess has a separate dining hall and a well-equipped kitchen catering to more than 3200 students. Mess serves breakfast, lunch, evening tea and dinner every day and the weekly menu is available with the mess in-charge. The food served is of high quality and meets the nutritional quality standards. Particular focus is laid to provide a well-balanced, nutritious diet with varying food tastes to all the students.SRM HOSTELS has grown into one of the most admired
+app in the state today- a testament to our commited pursuit of culinary and service excellence
+The hostel premises comprises of a separate dining facility for hostel residents. The hostel mess has a separate dining hall and a well-equipped kitchen catering to more than 3200 students. Mess serves breakfast, lunch, evening tea and dinner every day and the weekly menu is available with the mess in-charge. The food served is of high quality and meets the nutritional quality standards. Particular focus is laid to provide a well-balanced, nutritious diet with varying food tastes to all the students.Over the last 20 years SRM HOSTELS won the hearts of every user
+We ensure consistency of taste and quality across Outlets through a meticulous application standard operating procedures.
+Led by a strong management team which is amongst the finest in the industry,SRM HOSTELS is poised to grow aggressively 
+by providing new features across the state,thereby taking its legendary cuisine to more guests.
+On the horizon are several vibrant cities including Amaravathi,Chennai,Delhi.</h4>
+ 
+  <section align="center">
+  <h2>TAKE A TOUR!!</h2>
+  <video width="900" height="350" controls autoplay>
+  <source src="SRM UNIVERSITY,CHENNAI Mess Menu FOR 1ST YEAR B.TECH STUDENTS !!!!!.mp4" type="video/mp4">
+  
+  Your browser does not support the video tag.
+  </video>
+  </section>
+</td><td>
+ 
+</td>
+ 
+<div class="footer" align="center">
+  <footer>
+  <h2>Connect To Us</h2>
+  
+  <!-- Add font awesome icons -->
+  <a href="#" class="fa fa-facebook"></a>
+  
+  <a href="#" class="fa fa-twitter"></a>
+  
+  <a href="#" class="fa fa-google"></a> 
+  
+  <a href="#" class="fa fa-instagram"></a>
+  
+  </div> 
+  
+</body>
+</html>
